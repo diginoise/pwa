@@ -6,7 +6,7 @@
 	"background_color":"#5900b3", 
 	"theme_color":"black", 
 	"scope": ".", 
-	"description":"This is a PWA tutorial.", 
+	"description":"This is a basic PWA", 
 	"icons":[ 
         { 
             "src":"images/icon-128.png",					 
