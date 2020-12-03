@@ -1,3 +1,65 @@
-img {
-    width: 100%;
+* {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif; 
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: lightslategray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: limegreen;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: red;
+    }
+    img {
+        width: 100%;
+    }
+    .topnav a {
+        float: none;
+        width: 100%;
+      }
+}
+
+@media screen and (min-width: 601px) {
+    h1 {
+        color: green;
+    }
+    img {
+        width: 49%;
+        max-height: 220px;
+        display: inline;
+    }
+}
+
+@media print {
+    h1 {
+        color: purple;
+    }
+    p {
+        display: none;
+    }
+    .topnav {
+        display: none;
+    }
+    img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+}
+

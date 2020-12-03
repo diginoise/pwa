@@ -9,25 +9,31 @@
     <!-- Title -->
     <title>PWA Tutorial</title> 
 
-    <!-- Meta Tags requred for Progressive Web App -->
+    <!-- Meta Tags required for Progressive Web App -->
     <meta name="apple-mobile-web-app-status-bar" content="#aa7700"> 
     <meta name="theme-color" content="black"> 
 
     <!-- Manifest File link -->
     <link rel="manifest" href="manifest.json"> 
 
-    <link rel="style" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head> 
 
   <body> 
-    <h1 style="color: green;">First PWA</h1> 
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <h1>First PWA</h1> 
 
     <p> 
       Amazing content goes here... 
-      <img src="images/spacex1.jpg"/>
-      <img src="images/spacex2.jpg"/>
-    </p> 
+    </p></hr>
+    <img src="images/spacex1.jpg"/>
+    <img src="images/spacex2.jpg"/> 
 
+    <p>something witty about sky and limits</p>
 
     <script> 
       window.addEventListener('load', () => registerSW() ); 
@@ -37,8 +43,8 @@
         if ('serviceWorker' in navigator) { 
           try { 
             await navigator 
-                .serviceWorker 
-                .register('serviceworker.js'); 
+              .serviceWorker 
+              .register('serviceworker.js'); 
           } catch (e) { 
             console.log('SW registration failed'); 
           } 
